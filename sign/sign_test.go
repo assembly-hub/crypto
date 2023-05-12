@@ -1,57 +1,11 @@
-# crypto
-aes加解密，pbkdf2密码，rsa加解密
+package crypto
 
-## aes加解密
-```go
-aesKey := "poVVc2C9eUWNksde"
-aesObj := New(Conf{
-    Key: aesKey,
-    // IV: "", // default is key
-    PaddingType: NoOrZero,
-    // EncryptModel: CBC,
-})
+import (
+	"crypto/sha256"
+	"fmt"
+	"testing"
+)
 
-// 可以后续修改
-// aesObj.PaddingType(Zero)
-// aesObj.EncryptModel(OFB)
-
-// 加密
-d, err := aesObj.Encrypt("123")
-if err == nil {
-    fmt.Println("data: ", d)
-} else {
-    panic(err)
-}
-
-// 解密
-dd, err := aesObj.Decrypt(d)
-if err == nil {
-    fmt.Println("data: ", dd)
-} else {
-    panic(err)
-}
-```
-
-## 密码生成与校验
-```go
-p := "123456"
-encode, err := PasswordEncode(p, "", 0)
-if err != nil {
-    panic(err)
-}
-
-fmt.Println(encode)
-
-verify, err := PasswordVerify(p, encode)
-if err != nil {
-    panic(err)
-}
-
-fmt.Println(verify)
-```
-
-## 签名相关工具
-```go
 func TestHash256Sign(t *testing.T) {
 	key := "ljF388L6zsBncjLPYOlI0Y3R4D4fwLyr"
 	data := "2"
@@ -118,4 +72,3 @@ func TestPKCS1v15Sign2(t *testing.T) {
 
 	fmt.Println("ok")
 }
-```
