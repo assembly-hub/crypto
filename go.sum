@@ -1,4 +1,4 @@
-github.com/assembly-hub/basics v1.2.5 h1:3THTYEQAOV+skqiJ1Fg4ByujIKd/mYOMbKTErM4lQrI=
-github.com/assembly-hub/basics v1.2.5/go.mod h1:WJXeuFaAjuYApscn3Gu6zUrDlfWmrhWR6vm50yTd/GY=
+github.com/assembly-hub/basics v1.3.2 h1:B++BlFKyzCJ2G8299xkNKa6DXV0/ilGVKI1BZ7TWK7E=
+github.com/assembly-hub/basics v1.3.2/go.mod h1:WJXeuFaAjuYApscn3Gu6zUrDlfWmrhWR6vm50yTd/GY=
 golang.org/x/crypto v0.9.0 h1:LF6fAI+IutBocDJ2OT0Q1g8plpYljMZ4+lty+dsqw3g=
 golang.org/x/crypto v0.9.0/go.mod h1:yrmDGqONDYtNj3tH8X9dzUun2m2lzPa9ngI6/RUPGR0=
